@@ -1,5 +1,10 @@
 #!/bin/bash
 
+function replica() {
+  ipa server-find
+  ipa-replica-manage list
+}
+
 function accounts() {
 
 if [ -z $1 ]
@@ -93,5 +98,11 @@ case "$1" in
  ;;
   "accounts")
  accounts $2
+ ;;
+ "replica")
+ replica
+ ;;
+ *)
+ echo "Uso: $0 lab|accounts|replica"
  ;;
 esac
