@@ -20,5 +20,26 @@
 ./lab5.sh lab
 ```
 
+### Obterner información de las replicas
 
+
+```sh
+./lab5.sh lab
+```
+
+
+Instrucciones de Entrega:
+
+Ejecutar:
+
+```
+date > MD5.txt
+./lab5.sh replica > CARNET-lab5-sec1.txt &&  md5sum CARNET-lab5-sec1.txt >> MD5.txt
+./lab5.sh accounts all > CARNET-lab5-sec2.txt && md5sum CARNET-lab5-sec2.txt >> MD5.txt
+./lab5.sh lab > CARNET-lab5-sec3.txt && md5sum CARNET-lab5-sec3.txt >> MD5.txt
+
+tar -cvzf CARNET-lab5.tgz MD5.txt CARNET*
+md5sum CARNET-lab5.tgz
+```
+Subir al GES CARNET-lab5.tgz
 
