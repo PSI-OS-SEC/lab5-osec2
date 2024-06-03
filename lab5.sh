@@ -1,6 +1,6 @@
 #!/bin/bash
 
- LANG=en_US.UTF-8
+LANG=en_US.UTF-8
 
 function replica() {
   ipa server-find
