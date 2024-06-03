@@ -1,5 +1,7 @@
 #!/bin/bash
 
+ LANG=en_US.UTF-8
+
 function replica() {
   ipa server-find
   ipa-replica-manage list
