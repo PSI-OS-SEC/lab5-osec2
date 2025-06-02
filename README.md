@@ -24,7 +24,7 @@
 
 
 ```sh
-./lab5.sh lab
+./lab5.sh replica
 ```
 
 
